@@ -1,0 +1,12 @@
+#!/bin/bash
+
+root=$(dirname $(realpath $0))
+
+mkdir -p "$root/public/js"
+
+deno bundle \
+    --config "$root/../deno.jsonc" \
+    --import-map "$root/../import_map.json" \
+    "$@" \
+    "$root/src/index.tsx" \
+    "$root/public/js/index.js"

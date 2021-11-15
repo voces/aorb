@@ -1,0 +1,9 @@
+{
+    "imports": {
+        "mysql": "https://deno.land/x/mysql/mod.ts",
+        "preact-router": "https://esm.sh/preact-router",
+        "preact": "https://esm.sh/preact",
+        "preact/": "https://esm.sh/preact/",
+        "std/": "https://deno.land/std@0.114.0/"
+    }
+}
